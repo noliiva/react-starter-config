@@ -1,10 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier", "react-native"],
-  "globals": {
-    "__DEV__": true,
-    "GLOBAL": true
-  },
+  "extends": ["airbnb", "prettier", "react-app"],
   "settings": {
     "import/resolver": {
       "alias": [
