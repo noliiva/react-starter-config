@@ -54,3 +54,18 @@
   ]
 }
 ```
+
+## Folder tree
+```
+- index.js
+- assets
+  - images
+  - fonts
+- src
+  - components
+  - constants
+  - routes
+  - services
+  - styles
+  - utils
+``` 
