@@ -22,7 +22,7 @@
   - utils
 ``` 
 
-## installation shortcuts
+## Installation shortcuts
 ### data
 ```
 yarn install -E axios hoist-non-react-statics react-redux redux redux-actions redux-create-reducer redux-saga reselect
