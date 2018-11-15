@@ -1,0 +1,44 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "react-native"],
+  "globals": {
+    "__DEV__": true,
+    "GLOBAL": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["@assets", "./assets"],
+        ["@components", "./src/components"],
+        ["@constants", "./src/constants"],
+        ["@screens", "./src/screens"],
+        ["@services", "./src/services"],
+        ["@styles", "./src/styles"],
+        ["@utils", "./src/utils"]
+      ]
+    }
+  },
+  "rules": {
+    "linebreak-style": ["error", "windows"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "error",
+    "no-use-before-define": "off",
+    "no-invalid-this": "off",
+    "import/no-namespace": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "warn",
+    "react/display-name": "off",
+    "react/forbid-prop-types": "warn",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-handler-names": "warn",
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": [
+      "error",
+      { "ignore": ["navigation", "style", "styles", "customStyle", "customStyles"] }
+    ],
+    "react-native/no-color-literals": "warn",
+    "react-native/no-inline-styles": "warn"
+  }
+}
