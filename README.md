@@ -5,7 +5,7 @@
 * .prettierrc
 * .gitignore
 * .babelrc
-* pacakge.json
+* package.json
 
 ## Folder tree
 ```
