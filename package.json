@@ -1,13 +1,13 @@
 {
-  "scripts": {
-    "precommit": "lint-staged",
-    "prettier": "prettier --log-level=debug --list-different src/**/*.{js,jsx,json,css,scss}",
-    "lint": "eslint --ignore-path .gitignore --color ./**/*.{js,jsx}"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,css,scss}": [
-      "npm run prettier",
-      "npm run lint"
+      "prettier --log-level=debug --list-different",
+      "eslint --ignore-path .gitignore --color"
     ]
-  }
+  },
 }
